@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAdvert">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/lostAndFoundRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:checkedButton="@+id/lostRadioButton">
+
+                <TextView
+                    android:id="@+id/postTypeText"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:text="Post type:"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/lostRadioButton"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lost" />
+
+                <RadioButton
+                    android:id="@+id/foundRadioButton"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="Found" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:text="Name:"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter name"
+            android:textColorHint="@color/light_pink"
+            android:textColor="@color/black"
+            android:background="@drawable/pink_input_border"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/phoneText"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:text="Phone:"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter phone number"
+            android:textColorHint="@color/light_pink"
+            android:textColor="@color/black"
+            android:background="@drawable/pink_input_border"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:text="Item Description:"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter item description"
+            android:textColorHint="@color/light_pink"
+            android:textColor="@color/black"
+            android:background="@drawable/pink_input_border"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:text="Date:"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter date"
+            android:textColorHint="@color/light_pink"
+            android:textColor="@color/black"
+            android:background="@drawable/pink_input_border"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:text="Location:"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/locationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter location"
+            android:textColorHint="@color/light_pink"
+            android:textColor="@color/black"
+            android:background="@drawable/pink_input_border"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/deep_pink"
+            android:onClick="dbInsert"
+            android:text="Save" />
+    </LinearLayout>
+
+</FrameLayout>
